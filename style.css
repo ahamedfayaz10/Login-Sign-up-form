@@ -10,10 +10,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #191825;
+    background: url(login-bg.jpg);
+    position: relative;
 }
 
 form{
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translateY(-50%);
     width: 400px;
     height: 470px;
     border: 3px solid #fff;
@@ -21,7 +26,7 @@ form{
 }
 
 form:hover{
-    border: 3px solid #1cd679;
+    border: 3px solid blue;
 }
 
 .login{
@@ -70,14 +75,13 @@ form:hover{
 }
 
 .input-field input:focus{
-    border: 2px solid #1cd679;
+    border: 2px solid blue;
 }
 
 .input-field input:focus ~label,
 .input-field input:valid ~label{
-    top: 0;
-    padding: 7px;
-    background-color: #191825;
+    top: 0%;
+    padding: 6px;
     font-size: 14px;
 }
 
@@ -92,11 +96,11 @@ form:hover{
 .remember-forgot p a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .remember-forgot p a:hover{
-    text-decoration: underline #1cd679;
-    color: #1cd679
+    text-decoration: underline;
 }
 
 button{
@@ -113,7 +117,7 @@ button{
  }
 
  button:hover{
-    border: 2px solid #1cd679;
+    border: 2px solid blue;
  }
 
  .login-signup{
@@ -125,10 +129,11 @@ button{
 
  .login-signup p a{
     text-decoration: none;
-    color: #fff;
+    color:#fff;
+    font-weight: bold;
+    font-size: 18px;
  }
 
  .login-signup p a:hover{
-    text-decoration: underline #1cd679;
-    color: #1cd679
+    text-decoration: underline;
 }
