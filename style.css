@@ -63,7 +63,6 @@ form:hover{
     transform: translateY(-50%);
     left: 10px;
     pointer-events: none;
-    transition: .3s;
 }
 
 .input-field .icon{
@@ -80,9 +79,7 @@ form:hover{
 
 .input-field input:focus ~label,
 .input-field input:valid ~label{
-    top: 0%;
-    padding: 6px;
-    font-size: 14px;
+    opacity: 0;
 }
 
 .remember-forgot{
