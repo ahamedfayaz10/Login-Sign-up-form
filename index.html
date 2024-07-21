@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="login-page">
         <div class="login">
             <h1>Login</h1>
         </div>
@@ -36,9 +36,41 @@
         <button type="submit">Login</button>
 
         <div class="login-signup">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <p>Don't have an account? <a href="#" onclick="change()">Sign up</a></p>
         </div>
     </form>
+
+
+    <form id="signup-page">
+        <div class="sign-up">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="signup-inputfield">
+            <input type="text" required>
+            <label>Username:</label>
+        </div>
+        <div class="signup-inputfield">
+            <input type="email" required>
+            <label>Email:</label>
+        </div>
+        <div class="signup-inputfield">
+            <input type="password" required>
+            <label>Password:</label>
+        </div>
+        <div class="signup-inputfield">
+            <input type="password" required>
+            <label>Re-Enter Password:</label>
+        </div>
+
+            <button type="submit" class="signup-button">Sign Up</button>
+
+        <div class="already">
+            <p>already have an account? <a href="#" onclick="rechange()">Login</a></p>
+        </div>
+    </form>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
